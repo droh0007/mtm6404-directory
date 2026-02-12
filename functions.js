@@ -11,7 +11,6 @@ function list(array) {
   return listItems.join('');
 }
 
-
 // 2) Create an order function using sort() and arrow function
 function order(array, property) {
   return [...array].sort((a, b) => {
@@ -34,18 +33,15 @@ function order(array, property) {
   });
 }
 
-
 // 3) Create a total function using reduce() and arrow function
 function total(array) {
   return array.reduce((sum, client) => sum + client.balance, 0);
 }
 
-
 // 4) Create an info function using find() and arrow function
 function info(index) {
   return clients.find(client => client.index === index);
 }
-
 
 // 5) Create a search function using filter() and arrow function
 // Hint: use toLowerCase() on both query and client name
